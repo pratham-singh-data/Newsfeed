@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="275dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/newsCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="5dp"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/card_gradient"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/itemHeader"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_height="60dp"
+                android:textColor="@color/orange"
+                android:text="Sample header Sample header Sample header Sample header Sample header Sample header Sample header Sample headerSample header"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp">
+
+                <TextView
+                    android:id="@+id/itemDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:maxLines="6"
+                    android:padding="5dp"
+                    android:ellipsize="end"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="Sample Description Sample Description Sample Description Sample DescriptionSample Description Sample Description Sample Description Sample DescriptionSample Description Sample Description Sample Description Sample Description Sample Description Sample Description Sample Description Sample Description Sample Description Sample Description Sample Description Sample Description"/>
+
+                <ImageView
+                    android:id="@+id/itemImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_launcher_background"
+                    android:scaleType="centerCrop"/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/itemAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Test Author"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="italic"
+                android:textColor="@color/orange"
+                android:textAlignment="center"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/itemPublishedAt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Test Author"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="italic"
+                android:textColor="@color/orange"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
